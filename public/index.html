@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tailwind Darkmode Example</title>
+		<link rel="stylesheet" href="style.css" />
+
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<div class="w-full h-full bg-gray-50 dark:bg-gray-800 py-3">
+			<div class="mx-auto w-full flex flex-col items-center gap-2">
+				<div class="flex gap-3">
+					<button class="relative px-4 py-2 shadow-md rounded-md text-white bg-gray-500 dark:bg-gray-50 dark:text-black focus:outline-none" onclick="switchTheme()">
+						<div class="absolute top-0 left-0 bg-black w-full h-full rounded-md opacity-0 hover:opacity-5"></div>
+						Switch Theme
+					</button>
+					<button class="relative px-4 py-2 shadow-md rounded-md text-white bg-gray-500 dark:bg-gray-50 dark:text-black focus:outline-none" onclick="(() => {matchOSThemePreference(); SetDarkMode()})()">
+						<div class="absolute top-0 left-0 bg-black w-full h-full rounded-md opacity-0 hover:opacity-5"></div>
+						Respect OS Preference
+					</button>
+				</div>
+				<div class="mx-2 max-w-2xl">
+					<div class="rounded-lg shadow-md p-4 bg-white dark:bg-gray-400">
+						<h1 class="text-center font-medium text-xl tracking-wide">Lorem, ipsum dolor.</h1>
+						<p class="pt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, tempore! Veritatis eum, praesentium voluptates laudantium culpa explicabo, vero laboriosam commodi ipsam illo architecto, ea soluta cumque quo corrupti ab aut?</p>
+						<p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quia, quidem inventore perspiciatis culpa, facere voluptatum minus quis, dolor iusto dolore autem suscipit possimus dolores excepturi eligendi. Officiis, tempora quod!</p>
+						<img class="mx-auto my-4 rounded-md" width="350" height="350" src="image.jpg" alt="https://picsum.photos/" />
+						<p class="pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis perferendis rem nobis sapiente! Hic iste, laborum expedita debitis vitae facilis doloremque officiis a deleniti aliquid blanditiis provident, magnam sed exercitationem!</p>
+						<h1 class="pt-4 text-center font-medium text-xl tracking-wide">Lorem, ipsum dolor.</h1>
+						<p class="pt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, tempore! Veritatis eum, praesentium voluptates laudantium culpa explicabo, vero laboriosam commodi ipsam illo architecto, ea soluta cumque quo corrupti ab aut?</p>
+						<p class="pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi voluptatum eum nulla, ullam harum incidunt iure illum velit maxime? Voluptatum laboriosam reiciendis dignissimos? Tempora praesentium voluptatibus esse illum debitis veritatis!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

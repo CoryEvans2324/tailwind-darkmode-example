@@ -1,0 +1,21 @@
+{
+	"name": "tailwind-darkmode-example",
+	"version": "1.0.0",
+	"description": "",
+	"main": "",
+	"scripts": {
+		"build": "NODE_ENV=production TAILWIND_MODE=build postcss src/style.css -o public/style.css",
+		"build:dev": "TAILWIND_MODE=build postcss src/style.css -o public/style.css",
+		"watch": "TAILWIND_MODE=watch postcss src/style.css -o public/style.css -w"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^10.2.6",
+		"cssnano": "^5.0.6",
+		"postcss": "^8.3.2",
+		"postcss-cli": "^8.3.1",
+		"tailwindcss": "^2.1.4"
+	}
+}
